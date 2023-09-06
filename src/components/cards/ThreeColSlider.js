@@ -94,33 +94,21 @@ export default () => {
       //imageSrc: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
       title: "Course 1",
       description: "About the course 1",
-      //locationText: "Rome, Italy",
-      //pricingText: "USD 39/Day",
-      //rating: "4.8",
     },
     {
       //imageSrc: "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
       title: "Course 2",
       description: "About the course 2",
-      //locationText: "Ibiza, Spain",
-      //pricingText: "USD 50/Day",
-      //rating: 4.9,
     },
     {
       //imageSrc: "https://images.unsplash.com/photo-1549294413-26f195200c16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
       title: "Course 3",
       description: "About the course 3",
-      //locationText: "Palo Alto, CA",
-      //pricingText: "USD 19/Day",
-      //rating: "5.0",
     },
     {
       //imageSrc: "https://images.unsplash.com/photo-1571770095004-6b61b1cf308a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
       title: "Course 4",
       description: "About the course 4",
-      //locationText: "Arizona, RAK",
-      //pricingText: "USD 99/Day",
-      //rating: 4.5,
     },
   ]
 
@@ -129,33 +117,21 @@ export default () => {
       //imageSrc: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
       title: "Course 1",
       description: "about course 1",
-      //locationText: "Rome, Italy",
-      //pricingText: "USD 39/Day",
-      //rating: "4.8",
     },
     {
       //imageSrc: "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
       title: "Course 2",
       description: "about course 2",
-      //locationText: "Ibiza, Spain",
-      //pricingText: "USD 50/Day",
-      //rating: 4.9,
     },
     {
       //imageSrc: "https://images.unsplash.com/photo-1549294413-26f195200c16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
       title: "Course 3",
       description: "about course 3",
-      //locationText: "Palo Alto, CA",
-      //pricingText: "USD 19/Day",
-      //rating: "5.0",
     },
     {
       //imageSrc: "https://images.unsplash.com/photo-1571770095004-6b61b1cf308a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
       title: "Course 4",
       description: "about course 4",
-      //locationText: "Arizona, RAK",
-      //pricingText: "USD 99/Day",
-      //rating: 4.5,
     },
   ]
 
@@ -164,10 +140,10 @@ export default () => {
       <Content>
         <HeadingWithControl>
           <Heading>Popular Courses</Heading>
-          <Controls>
-            <PrevButton onClick={sliderRef?.slickPrev}><ChevronLeftIcon/></PrevButton>
-            <NextButton onClick={sliderRef?.slickNext}><ChevronRightIcon/></NextButton>
-          </Controls>
+        <Controls>
+          <PrevButton onClick={sliderRef?.slickPrev}><ChevronLeftIcon/></PrevButton>
+          <NextButton onClick={sliderRef?.slickNext}><ChevronRightIcon/></NextButton>
+        </Controls>
         </HeadingWithControl>
         <CardSlider ref={setSliderRef} {...sliderSettings}>
           {cards.map((card, index) => (
@@ -176,28 +152,10 @@ export default () => {
               <TextInfo>
                 <TitleReviewContainer>
                   <Title>{card.title}</Title>
-                  <RatingsInfo>
-                    <StarIcon />
-                    <Rating>{card.rating}</Rating>
-                  </RatingsInfo>
                 </TitleReviewContainer>
-                <SecondaryInfoContainer>
-                  <IconWithText>
-                    <IconContainer>
-                      <LocationIcon />
-                    </IconContainer>
-                    <Text>{card.locationText}</Text>
-                  </IconWithText>
-                  <IconWithText>
-                    <IconContainer>
-                      <PriceIcon />
-                    </IconContainer>
-                    <Text>{card.pricingText}</Text>
-                  </IconWithText>
-                </SecondaryInfoContainer>
-                <Description>{card.description}</Description>
+               <Description>{card.description}</Description>
               </TextInfo>
-              {/*<PrimaryButton>Book Now</PrimaryButton>*/}
+              
             </Card>
           ))}
         </CardSlider>
@@ -217,28 +175,12 @@ export default () => {
               <TextInfo>
                 <TitleReviewContainer>
                   <Title>{card.title}</Title>
-                  <RatingsInfo>
-                    <StarIcon />
-                    <Rating>{card.rating}</Rating>
-                  </RatingsInfo>
+
                 </TitleReviewContainer>
-                <SecondaryInfoContainer>
-                  <IconWithText>
-                    <IconContainer>
-                      <LocationIcon />
-                    </IconContainer>
-                    <Text>{card.locationText}</Text>
-                  </IconWithText>
-                  <IconWithText>
-                    <IconContainer>
-                      <PriceIcon />
-                    </IconContainer>
-                    <Text>{card.pricingText}</Text>
-                  </IconWithText>
-                </SecondaryInfoContainer>
+                
                 <Description>{card.description}</Description>
               </TextInfo>
-              {/*<PrimaryButton>Book Now</PrimaryButton>*/}
+            
             </Card>
           ))}
         </CardSlider>

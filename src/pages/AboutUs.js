@@ -22,18 +22,18 @@ export default () => {
     <AnimationRevealPage>
       <Header />
       <MainFeature1
-        subheading={<Subheading>About Treact</Subheading>}
-        heading="We are a modern design agency."
+        subheading={<Subheading>About Certificate NFT</Subheading>}
+        heading="We are a New and Trending Knowledge provider"
         buttonRounded={false}
         primaryButtonText="See Portfolio"
-        imageSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
+        // imageSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
       />
       <MainFeature1
         subheading={<Subheading>Our Vision</Subheading>}
         heading="We aim to disrupt the design space."
         buttonRounded={false}
         primaryButtonText="Contact Us"
-        imageSrc="https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=768&q=80"
+        // imageSrc="https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=768&q=80"
         textOnLeft={false}
       />
       <Features
@@ -49,20 +49,17 @@ export default () => {
           {
             imageSrc: ShieldIconImage,
             title: "Strong Teams",
-            description: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport"
+            description: "description"
           },
           {
             imageSrc: CustomerLoveIconImage,
             title: "Customer Satisfaction",
-            description: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport"
+            description: "description"
           },
         ]}
         linkText=""
       />
-      <TeamCardGrid 
-        subheading={<Subheading>Our Team</Subheading>}
-      />
-      <Footer />
+
     </AnimationRevealPage>
   );
 };

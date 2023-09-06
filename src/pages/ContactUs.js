@@ -20,15 +20,15 @@ export default () => {
       <ContactDetails
         cards={[
           {
-            title: "New York",
+            title: "Pambahinna",
             description: (
               <>
                 <Address>
-                  <AddressLine>40 Gates Court</AddressLine>
-                  <AddressLine>Endicott, NY 13760</AddressLine>
+                  <AddressLine>Pambahinna</AddressLine>
+                  <AddressLine>sri lanka</AddressLine>
                 </Address>
-                <Email>contact@treact.com</Email>
-                <Phone>+1 (203) 991-6988</Phone>
+                <Email>contact@gmail.com</Email>
+                <Phone>123456789</Phone>
               </>
             )
           },

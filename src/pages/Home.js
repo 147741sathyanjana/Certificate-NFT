@@ -16,15 +16,8 @@ import VerticalWithAlternateImageAndText from "components/features/VerticalWithA
 export default () => (
   <AnimationRevealPage>
     <Hero />
-    {/*<Features />*/}
     <SliderCard />
     <VerticalWithAlternateImageAndText/>
-    {/*<TrendingCard / >}
-    <MainFeature />
-    {/* <Blog /> */}
-    {/* <Testimonial textOnLeft={true}/> */}
-    {/*<FAQ />
-    <SubscribeNewsLetterForm />*/}
     <Footer />
   </AnimationRevealPage>
 );
