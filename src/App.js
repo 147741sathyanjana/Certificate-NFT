@@ -12,6 +12,10 @@ export default function App() {
   return (
     <>
       <GlobalStyles />
+      <head>
+  <title>My Page Title</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
+</head>
       <Router>
         <Routes>
           <Route path="/login" element={<Login />} />
